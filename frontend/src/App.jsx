@@ -30,23 +30,35 @@ function App() {
       <p>Our quality will make you feel like a superstar</p>
     </div>
       
+
+    {/* TODO: add text under each gallery card */}  
     <div class="gallery-container">
-        
-      <a className="gallery-image" href="/about">
-        <img src={salon} alt="Inside Hollywood Nails" />
-      </a>
 
-      <a className="gallery-image" href="/services">
-        <img src={paintingNails} alt="Nail tech painting nails" />
-      </a>
+      <article className="gallery-card">
+        <a className="gallery-image" href="/about">
+          <img src={salon} alt="Inside Hollywood Nails" />
+        </a>  
+        <h2>Our Story</h2>
+        <p>blah blah blah</p>
+      </article>  
 
-      <a className="gallery-image" href="/contact">
-        <img src={furniture} alt="Hollywood Nails Furniture" />
-      </a>
+      <article className="gallery-card">
+        <a className="gallery-image" href="/services">
+          <img src={paintingNails} alt="Nail tech painting nails" />
+        </a>
+        <h2>Services</h2>
+        <p>Manicures and Pedicures</p>
+      </article>
+
+      <article className="gallery-card">
+        <a className="gallery-image" href="/contact">
+          <img src={furniture} alt="Hollywood Nails Furniture" />
+        </a>
+        <h2>Location</h2>
+        <p>We're located inside the Morgantown Mall just across Dunhams!</p>
+      </article>
 
     </div>
-
-
     </>
   )
 }
