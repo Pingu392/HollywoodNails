@@ -25,3 +25,40 @@
 .navbar a.navbar-logo{
   float:left;
 }
+
+.salon-intro {
+  max-width: 40rem;
+  margin-inline: auto;
+  padding: clamp(3rem, 8vw, 6rem) 1.25rem 3rem;
+  text-align: center;
+}
+
+.salon-intro h1{
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.salon-intro hr{
+  border: 0;
+  border-top: 1px solid currentColor;
+  margin: 2rem 0;
+}
+
+.salon-intro p{
+  line-height: 1.7;
+}
+
+.gallery-container{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  padding-inline: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.gallery-image img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}

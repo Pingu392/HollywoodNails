@@ -1,8 +1,12 @@
 import './App.css'
 import logo from '../public/placeholder_logo.png'
+import paintingNails from '../public/placeholder_painting_nails.png'
+import furniture from '../public/placeholder_furniture.png'
+import salon from '../public/placeholder_salon.png'
 
 function App() {
   return (
+    <>
 
     <nav className="navbar">
       
@@ -19,6 +23,31 @@ function App() {
         </div>
       </div>
     </nav>
+
+    <div className="salon-intro">
+      <h1>Feel Like A Superstar!</h1>
+      <hr />
+      <p>Our quality will make you feel like a superstar</p>
+    </div>
+      
+    <div class="gallery-container">
+        
+      <a className="gallery-image" href="/about">
+        <img src={salon} alt="Inside Hollywood Nails" />
+      </a>
+
+      <a className="gallery-image" href="/services">
+        <img src={paintingNails} alt="Nail tech painting nails" />
+      </a>
+
+      <a className="gallery-image" href="/contact">
+        <img src={furniture} alt="Hollywood Nails Furniture" />
+      </a>
+
+    </div>
+
+
+    </>
   )
 }
 
